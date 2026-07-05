@@ -43,14 +43,14 @@ export default function Contact() {
           </a>
 
           <a 
-            href="https://twitter.com/theuselesswebwtf" 
+            href="https://twitter.com/theuselesswebwt" 
             target="_blank"
             rel="noopener noreferrer"
             className="p-8 bg-slate-900 rounded-2xl border border-slate-800 hover:border-indigo-500 transition-all group"
           >
             <X className="mx-auto mb-4 text-slate-500 group-hover:text-indigo-400 transition-colors" size={32} />
             <span className="block font-bold">X (Twitter)</span>
-            <span className="text-xs text-slate-500">@theuselesswebwtf</span>
+            <span className="text-xs text-slate-500">@theuselesswebwt</span>
           </a>
         </div>
 
