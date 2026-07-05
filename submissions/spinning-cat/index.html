@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Cat</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #9b59b6;
+            overflow: hidden;
+        }
+        #cat {
+            font-size: 150px;
+            cursor: pointer;
+            user-select: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="cat">🐱</div>
+    <script>
+        const cat = document.getElementById('cat');
+        let rotation = 0;
+        let speed = 2;
+
+        function animate() {
+            rotation += speed;
+            cat.style.transform = `rotate(${rotation}deg)`;
+            requestAnimationFrame(animate);
+        }
+
+        cat.onclick = () => {
+            speed += 5;
+        };
+
+        animate();
+    </script>
+</body>
+</html>

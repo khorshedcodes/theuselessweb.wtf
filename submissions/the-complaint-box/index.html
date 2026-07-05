@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Complaint Box</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <textarea id="txt" placeholder="Type complaints here..."></textarea><button id="sub">Submit</button>
+    <script>
+        document.getElementById('sub').onclick = () => { const t = document.getElementById('txt'); const bird = document.createElement('div'); bird.innerText = '🐦'; bird.style.position = 'fixed'; bird.style.left = t.offsetLeft + 'px'; bird.style.top = t.offsetTop + 'px'; document.body.appendChild(bird); t.value = ''; let x = t.offsetLeft, y = t.offsetTop; const anim = setInterval(() => { x += 5; y -= 5; bird.style.left = x + 'px'; bird.style.top = y + 'px'; if(y < -50) { clearInterval(anim); bird.remove(); } }, 20); };
+    </script>
+</body>
+</html>

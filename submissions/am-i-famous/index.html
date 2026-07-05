@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Am I Famous?</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <div id="msg">Searching for your name on the guest list...</div>
+    <script>
+        const msgs = ["Still searching...", "Checking the VIP section...", "Asking the manager...", "Verifying credentials..."]; let i = 0; setInterval(() => { document.getElementById('msg').innerText = msgs[i % msgs.length]; i++; }, 3000);
+    </script>
+</body>
+</html>

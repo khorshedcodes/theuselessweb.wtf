@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invisible Button</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            cursor: default;
+        }
+        #btn {
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="alert('You found me!')"></button>
+    <script>
+        const btn = document.getElementById('btn');
+        btn.style.position = 'absolute';
+        btn.style.left = Math.random() * (window.innerWidth - 50) + 'px';
+        btn.style.top = Math.random() * (window.innerHeight - 50) + 'px';
+    </script>
+</body>
+</html>

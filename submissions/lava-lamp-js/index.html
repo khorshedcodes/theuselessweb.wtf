@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lava Lamp JS</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }.lamp { width: 200px; height: 400px; background: #222; border-radius: 50px 50px 20px 20px; position: relative; overflow: hidden; border: 5px solid #444; } .blob { width: 100px; height: 100px; background: #ff4500; border-radius: 50%; position: absolute; bottom: -50px; left: 50px; filter: blur(20px); animation: move 8s infinite alternate ease-in-out; } @keyframes move { to { transform: translateY(-350px) scale(1.5); } }
+    </style>
+</head>
+<body>
+    <div class="lamp"><div class="blob"></div><div class="blob" style="animation-delay:-2s"></div><div class="blob" style="animation-delay:-4s"></div></div>
+    <script>
+        
+    </script>
+</body>
+</html>

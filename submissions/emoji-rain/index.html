@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Rain</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #000; height: 100vh; cursor: pointer; }
+        .emoji {
+            position: absolute;
+            font-size: 40px;
+            user-select: none;
+        }
+    </style>
+</head>
+<body onclick="rain()">
+    <div style="color: white; text-align: center; margin-top: 20vh; font-family: sans-serif; pointer-events: none;">
+        Click anywhere for emoji rain
+    </div>
+    <script>
+        const emojis = ['😂', '💩', '🍦', '🍕', '🦄', '🌈', '🍆', '🤡', '🥑', '👾'];
+        function rain() {
+            for(let i=0; i<20; i++) {
+                const e = document.createElement('div');
+                e.className = 'emoji';
+                e.innerText = emojis[Math.floor(Math.random()*emojis.length)];
+                e.style.left = Math.random() * 100 + 'vw';
+                e.style.top = '-50px';
+                document.body.appendChild(e);
+                
+                let pos = -50;
+                let speed = 2 + Math.random() * 5;
+                let rot = Math.random() * 360;
+                let rotSpeed = (Math.random() - 0.5) * 10;
+
+                const anim = setInterval(() => {
+                    pos += speed;
+                    rot += rotSpeed;
+                    e.style.top = pos + 'px';
+                    e.style.transform = `rotate(${rot}deg)`;
+                    if (pos > window.innerHeight) {
+                        clearInterval(anim);
+                        e.remove();
+                    }
+                }, 20);
+            }
+        }
+    </script>
+</body>
+</html>

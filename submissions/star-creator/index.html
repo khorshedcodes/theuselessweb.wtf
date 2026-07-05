@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Creator</title>
+    <style>
+        body { background: #000814; margin:0; } #c { position:fixed; top:0; left:0; }
+    </style>
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <script>
+        const c = document.getElementById('c'); const ctx = c.getContext('2d'); c.width = window.innerWidth; c.height = window.innerHeight; const stars = []; c.onclick = (e) => { stars.push({x: e.clientX, y: e.clientY}); ctx.clearRect(0,0,c.width,c.height); ctx.strokeStyle = 'rgba(255,255,255,0.2)'; ctx.beginPath(); stars.forEach((s, i) => { ctx.fillStyle = 'white'; ctx.beginPath(); ctx.arc(s.x, s.y, 2, 0, Math.PI*2); ctx.fill(); if(i>0) { ctx.moveTo(stars[i-1].x, stars[i-1].y); ctx.lineTo(s.x, s.y); } }); ctx.stroke(); };
+    </script>
+</body>
+</html>

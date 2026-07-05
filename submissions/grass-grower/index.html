@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grass Grower</title>
+    <style>
+        body { background: #000; margin:0; } #c { position:fixed; top:0; left:0; }
+    </style>
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <script>
+        const c = document.getElementById('c'); const ctx = c.getContext('2d'); c.width = window.innerWidth; c.height = window.innerHeight; window.onmousemove = (e) => { ctx.beginPath(); ctx.moveTo(e.clientX, e.clientY); ctx.lineTo(e.clientX + (Math.random()-0.5)*10, e.clientY - Math.random()*30); ctx.strokeStyle = 'green'; ctx.lineWidth = 2; ctx.stroke(); };
+    </script>
+</body>
+</html>

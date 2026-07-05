@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Gravity</title>
+    <style>
+        body { background: #111; margin:0; overflow:hidden; } #c { position:fixed; top:0; left:0; }
+    </style>
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <script>
+        const c = document.getElementById('c'); const ctx = c.getContext('2d'); c.width = window.innerWidth; c.height = window.innerHeight; const particles = []; window.onmousemove = (e) => { for(let i=0; i<5; i++) particles.push({x: e.clientX, y: e.clientY, vy: 2, c: 'hsl(' + (Math.random()*360) + ', 70%, 50%)'}); }; function draw() { ctx.fillStyle = 'rgba(17,17,17,0.1)'; ctx.fillRect(0,0,c.width,c.height); particles.forEach((p, i) => { p.y += p.vy; p.vy += 0.1; ctx.fillStyle = p.c; ctx.fillRect(p.x, p.y, 4, 4); if(p.y > c.height) particles.splice(i, 1); }); requestAnimationFrame(draw); } draw();
+    </script>
+</body>
+</html>

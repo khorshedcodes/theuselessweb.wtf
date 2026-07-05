@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Trails</title>
+    <style>
+        body { background: #000; margin:0; } #c { position:fixed; top:0; left:0; }
+    </style>
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <script>
+        const c = document.getElementById('c'); const ctx = c.getContext('2d'); c.width = window.innerWidth; c.height = window.innerHeight; let points = []; window.onmousemove = (e) => { points.push({x: e.clientX, y: e.clientY, a: 1}); }; function draw() { ctx.fillStyle = 'black'; ctx.fillRect(0,0,c.width,c.height); points.forEach((p, i) => { ctx.beginPath(); ctx.arc(p.x, p.y, 5, 0, Math.PI*2); ctx.fillStyle = 'rgba(0, 255, 255, ' + p.a + ')'; ctx.fill(); p.a -= 0.02; if(p.a <= 0) points.splice(i, 1); }); requestAnimationFrame(draw); } draw();
+    </script>
+</body>
+</html>

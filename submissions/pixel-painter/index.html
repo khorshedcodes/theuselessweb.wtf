@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Painter</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #341f97;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(10, 40px);
+            grid-template-rows: repeat(10, 40px);
+            gap: 2px;
+            background: white;
+            padding: 2px;
+            border: 5px solid white;
+        }
+        .pixel {
+            width: 40px;
+            height: 40px;
+            background: white;
+            cursor: pointer;
+        }
+        .pixel.black { background: black; }
+    </style>
+</head>
+<body>
+    <div class="grid" id="grid"></div>
+    <script>
+        const grid = document.getElementById('grid');
+        for(let i=0; i<100; i++) {
+            const p = document.createElement('div');
+            p.className = 'pixel';
+            p.onclick = () => p.classList.toggle('black');
+            grid.appendChild(p);
+        }
+    </script>
+</body>
+</html>

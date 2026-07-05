@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Pet Rock</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #7f8c8d;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+        #rock { font-size: 150px; margin-bottom: 20px; }
+        .controls { display: flex; gap: 10px; }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background: #34495e;
+            color: white;
+            border: 2px solid white;
+        }
+        #status { margin-top: 20px; font-size: 20px; height: 30px; }
+    </style>
+</head>
+<body>
+    <div id="rock">🪨</div>
+    <div class="controls">
+        <button onclick="update('The rock is indifferent.')">Feed</button>
+        <button onclick="update('The rock remains stationary.')">Walk</button>
+        <button onclick="update('The rock is already very still.')">Sleep</button>
+    </div>
+    <div id="status"></div>
+    <script>
+        function update(msg) {
+            document.getElementById('status').innerText = msg;
+        }
+    </script>
+</body>
+</html>

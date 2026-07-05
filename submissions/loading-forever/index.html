@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Forever</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #222;
+            color: white;
+            font-family: sans-serif;
+        }
+        .bar-container {
+            width: 80%;
+            height: 30px;
+            background: #444;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid white;
+        }
+        #bar {
+            width: 0%;
+            height: 100%;
+            background: #00d2d3;
+            transition: width 0.1s linear;
+        }
+        #msg { margin-top: 20px; font-size: 18px; color: #00d2d3; }
+    </style>
+</head>
+<body>
+    <div class="bar-container"><div id="bar"></div></div>
+    <div id="msg">Initializing...</div>
+    <script>
+        const bar = document.getElementById('bar');
+        const msg = document.getElementById('msg');
+        const msgs = [
+            "Recalculating the meaning of life...",
+            "Deleting system32... just kidding",
+            "Waiting for the universe to expand...",
+            "Polishing pixels...",
+            "Consulting with the digital pet rock...",
+            "Checking if water is still wet...",
+            "Loading more load bars...",
+            "Counting to infinity... twice..."
+        ];
+        let progress = 0;
+
+        function update() {
+            progress += Math.random() * 0.5;
+            if (progress >= 99) {
+                progress = 0;
+                msg.innerText = msgs[Math.floor(Math.random() * msgs.length)];
+            }
+            bar.style.width = progress + '%';
+            setTimeout(update, 50 + Math.random() * 100);
+        }
+        update();
+    </script>
+</body>
+</html>

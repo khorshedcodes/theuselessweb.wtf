@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitch Text Converter</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <input id="in"><div id="out"></div>
+    <script>
+        document.getElementById('in').oninput = (e) => { let t = e.target.value; document.getElementById('out').innerText = t.split('').map(c => c + Array(5).fill(0).map(()=>String.fromCharCode(0x0300 + Math.random()*0x6F)).join('')).join(''); };
+    </script>
+</body>
+</html>

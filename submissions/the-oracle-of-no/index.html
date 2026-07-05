@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Oracle of No</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <div id="ball" style="width:200px; height:200px; background:purple; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; text-align:center; cursor:pointer; padding:20px;">Ask me anything</div>
+    <script>
+        const nos = ["No.", "Probably not.", "No (but in Spanish).", "Never.", "In your dreams.", "Nooooo."]; document.getElementById('ball').onclick = () => { document.getElementById('ball').innerText = nos[Math.floor(Math.random()*nos.length)]; };
+    </script>
+</body>
+</html>
