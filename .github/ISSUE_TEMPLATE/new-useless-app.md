@@ -1,15 +1,16 @@
 ---
 name: "🌀 New Useless App Contribution"
-about: "Claim a useless app idea from the backlog and build it!"
+about: "Submit a proposal for a new useless app you want to build!"
 title: "[App Contribution] Build: <app-name-here>"
 labels: ["good first issue", "help wanted"]
 assignees: []
 ---
 
-## 🌀 Claiming a Backlog App
-Tell us which backlog idea you want to build (refer to [backlog.md](https://github.com/khorshedcodes/theuselessweb.wtf/blob/master/backlog.md)).
+## 🌀 Claiming / Pitching Your App
+Tell us what useless app you want to build! You are free to design and build absolutely anything as long as it's creative and useless.
 
-*   **App Name:** `<e.g., password-god>`
+*   **App Name / Slug:** `<e.g., my-crazy-cursor>`
+*   **Brief Description:** `<What does it do? (e.g., A cursor that gets larger the longer you wait)>`
 *   **Assigned to:** @username
 
 ## 🚀 How to build it

@@ -39,7 +39,7 @@ node scripts/check-health.mjs
 
 We love useless things! 
 
-- **Want to build something?** Check out our list of 50 creative ideas in [backlog.md](backlog.md) or pick up one of our active [Good First Issues](https://github.com/khorshedcodes/theuselessweb.wtf/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)!
+- **Want to build something?** You can build absolutely anything! Check out our active [Good First Issues](https://github.com/khorshedcodes/theuselessweb.wtf/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) to claim a spot or pitch your idea.
 - **Ready to submit?** See [CONTRIBUTING.md](CONTRIBUTING.md) for a quick step-by-step guide on how to register your creation on the platform.
 
 ## ⚖️ License
