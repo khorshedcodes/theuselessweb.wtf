@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useless Toggle</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f1c40f;
+            font-family: sans-serif;
+        }
+        .container { text-align: center; }
+        input[type="checkbox"] {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enable Awesome Mode?</h1>
+        <input type="checkbox" id="toggle" onchange="resetToggle()">
+    </div>
+    <script>
+        function resetToggle() {
+            const cb = document.getElementById('toggle');
+            if (cb.checked) {
+                setTimeout(() => {
+                    cb.checked = false;
+                }, 200);
+            }
+        }
+    </script>
+</body>
+</html>

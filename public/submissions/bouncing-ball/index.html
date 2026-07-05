@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: black; }
+        #ball {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="ball">BALL</div>
+    <script>
+        const ball = document.getElementById('ball');
+        let x = 0, y = 0, vx = 5, vy = 5;
+        const colors = ['#ff9f43', '#ee5253', '#0abde3', '#10ac84', '#5f27cd'];
+
+        function animate() {
+            x += vx;
+            y += vy;
+
+            if (x <= 0 || x >= window.innerWidth - 100) {
+                vx *= -1;
+                changeColor();
+            }
+            if (y <= 0 || y >= window.innerHeight - 100) {
+                vy *= -1;
+                changeColor();
+            }
+
+            ball.style.left = x + 'px';
+            ball.style.top = y + 'px';
+            requestAnimationFrame(animate);
+        }
+
+        function changeColor() {
+            ball.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        animate();
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #54a0ff;
+            font-family: sans-serif;
+            color: white;
+        }
+        #number { font-size: 150px; margin-top: 20px; }
+        button {
+            padding: 20px 40px;
+            font-size: 24px;
+            cursor: pointer;
+            border: none;
+            border-radius: 50px;
+            background: #2e86de;
+            color: white;
+            box-shadow: 0 4px #10ac84;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="generate()">Generate Random Number</button>
+    <div id="number">?</div>
+    <script>
+        function generate() {
+            document.getElementById('number').innerText = '1';
+        }
+    </script>
+</body>
+</html>

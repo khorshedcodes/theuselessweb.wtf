@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hum</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <p>Do you hear it?</p>
+    <script>
+        const ctx = new AudioContext(); window.onclick = () => { const osc = ctx.createOscillator(); const gain = ctx.createGain(); osc.connect(gain); gain.connect(ctx.destination); osc.frequency.value = 60; gain.gain.value = 0.005; osc.start(); };
+    </script>
+</body>
+</html>

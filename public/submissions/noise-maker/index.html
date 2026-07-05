@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noise Maker</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #2c3e50;
+        }
+        button {
+            padding: 30px 60px;
+            font-size: 30px;
+            cursor: pointer;
+            border-radius: 15px;
+            border: none;
+            background: #e74c3c;
+            color: white;
+            box-shadow: 0 6px #c0392b;
+        }
+        button:active {
+            box-shadow: 0 2px #c0392b;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="makeNoise()">BEEP</button>
+    <script>
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function makeNoise() {
+            const oscillator = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+
+            oscillator.type = ['sine', 'square', 'sawtooth', 'triangle'][Math.floor(Math.random() * 4)];
+            oscillator.frequency.setValueAtTime(200 + Math.random() * 1000, audioCtx.currentTime);
+            
+            gainNode.gain.setValueAtTime(0.1, audioCtx.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.5);
+
+            oscillator.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+
+            oscillator.start();
+            oscillator.stop(audioCtx.currentTime + 0.5);
+        }
+    </script>
+</body>
+</html>

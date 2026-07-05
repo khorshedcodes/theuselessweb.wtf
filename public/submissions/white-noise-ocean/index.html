@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Noise Ocean</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <input type="range" id="vol" min="0" max="1" step="0.1" value="0"> <p>Statue <-> Ocean Storm</p>
+    <script>
+        const ctx = new AudioContext(); let source; document.getElementById('vol').onclick = () => { if(!source) { const bufferSize = 2 * ctx.sampleRate, noiseBuffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate), output = noiseBuffer.getChannelData(0); for (let i = 0; i < bufferSize; i++) output[i] = Math.random() * 2 - 1; source = ctx.createBufferSource(); source.buffer = noiseBuffer; source.loop = true; const gain = ctx.createGain(); source.connect(gain); gain.connect(ctx.destination); source.start(); document.getElementById('vol').oninput = (e) => { gain.gain.value = e.target.value; }; } };
+    </script>
+</body>
+</html>

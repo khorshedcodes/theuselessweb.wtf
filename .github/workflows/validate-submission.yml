@@ -1,0 +1,69 @@
+name: Pull Request Validation
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          # Full history needed to compare with merge base
+          fetch-depth: 0
+
+      - name: 🛡️ Guard — Only allowed paths may be changed
+        run: |
+          # Get the list of all changed files in this PR
+          CHANGED=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          echo "Changed files:"
+          echo "$CHANGED"
+          echo "---"
+
+          INVALID=0
+          while IFS= read -r file; do
+            # Allow changes inside public/submissions/
+            if [[ "$file" == public/submissions/* ]]; then
+              continue
+            fi
+            # Allow changes to the registry index file only
+            if [[ "$file" == "src/data/registry.json" ]]; then
+              continue
+            fi
+            # Anything else is rejected
+            echo "❌ REJECTED: '$file' is outside the allowed contribution paths."
+            echo "   Allowed paths:"
+            echo "     - public/submissions/<your-slug>/"
+            echo "     - src/data/registry.json"
+            INVALID=1
+          done <<< "$CHANGED"
+
+          if [ "$INVALID" -eq 1 ]; then
+            echo ""
+            echo "🛑 This PR modifies files outside the contribution sandbox."
+            echo "   Only changes to 'public/submissions/' and 'src/data/registry.json' are auto-mergeable."
+            echo "   Core engine changes require manual review by a maintainer."
+            exit 1
+          fi
+
+          echo "✅ All changed files are within the allowed contribution paths."
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Submission Rules Validation
+        run: node scripts/validate-pr.mjs
+
+      - name: Verify Next.js Build
+        run: npm run build
+

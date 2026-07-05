@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Existential Dread</title>
+    <style>
+        body { margin: 0; background: black; color: #333; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: 'Courier New', Courier, monospace; overflow: hidden; }
+        #void { font-size: 2rem; text-align: center; max-width: 80%; }
+        .fade-in { animation: fadeIn 5s infinite alternate; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <div id="void" class="fade-in">Everything you do will eventually be forgotten... but that's okay.</div>
+    <script>
+        const thoughts = [
+            "The universe is vast and you are small.",
+            "Nothing matters, so enjoy the cookies.",
+            "Time is an illusion, lunchtime doubly so.",
+            "You are made of stardust and bad decisions.",
+            "Silence is the only thing that never betrays.",
+            "Don't worry, the sun will eventually explode."
+        ];
+        setInterval(() => {
+            document.getElementById('void').textContent = thoughts[Math.floor(Math.random() * thoughts.length)];
+        }, 5000);
+    </script>
+</body>
+</html>

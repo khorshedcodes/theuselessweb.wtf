@@ -1,0 +1,1057 @@
+[
+  {
+    "slug": "click-the-duck",
+    "type": "internal",
+    "title": "Click the Duck",
+    "author": "system",
+    "description": "A high-stakes mini-game where you must click a teleporting duck to survive the boredom.",
+    "path": "/submissions/click-the-duck/index.html",
+    "tags": [
+      "interactive",
+      "game"
+    ],
+    "weight": 8
+  },
+  {
+    "slug": "existential-dread",
+    "type": "internal",
+    "title": "Existential Dread",
+    "author": "system",
+    "description": "A minimalist space to contemplate the vastness of the universe and your small place in it.",
+    "path": "/submissions/existential-dread/index.html",
+    "tags": [
+      "visual",
+      "philosophy"
+    ],
+    "weight": 5
+  },
+  {
+    "slug": "he-man-loop",
+    "type": "external",
+    "title": "He-Man Singing Classic",
+    "author": "internet_archive",
+    "description": "The legendary 10-hour loop of He-Man singing 'What's Up' to brighten your day.",
+    "external_url": "https://heyyeyaaeyaaaeyaeyaa.com/",
+    "tags": [
+      "audio",
+      "nostalgia",
+      "video"
+    ],
+    "weight": 2
+  },
+  {
+    "slug": "pointer-pointer",
+    "type": "external",
+    "title": "Pointer Pointer",
+    "author": "monogrid",
+    "description": "A technological marvel that finds a person pointing exactly at your mouse cursor.",
+    "external_url": "https://pointerpointer.com/",
+    "tags": [
+      "interactive",
+      "visual"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "cat-bounce",
+    "type": "external",
+    "title": "Cat Bounce",
+    "author": "tara_wilder",
+    "description": "Physics-based cats that bounce. It is exactly what you need right now.",
+    "external_url": "https://cat-bounce.com/",
+    "tags": [
+      "visual",
+      "cats"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "falling-falling",
+    "type": "external",
+    "title": "Falling Falling",
+    "author": "rafael_rozendaal",
+    "description": "A hypnotic, never-ending descent through infinite colors and sound.",
+    "external_url": "http://fallingfalling.com/",
+    "tags": [
+      "visual",
+      "audio"
+    ],
+    "weight": 2
+  },
+  {
+    "slug": "paper-toilet",
+    "type": "external",
+    "title": "Paper Toilet",
+    "author": "rafael_rozendaal",
+    "description": "The digital equivalent of unrolling an infinite roll of toilet paper. Surprisingly satisfying.",
+    "external_url": "http://papertoilet.com/",
+    "tags": [
+      "interactive"
+    ],
+    "weight": 2
+  },
+  {
+    "slug": "eel-slap",
+    "type": "external",
+    "title": "Eel Slap",
+    "author": "eel_slap",
+    "description": "Experience the unique sensation of slapping a man in the face with a giant eel.",
+    "external_url": "http://eel-slap.com/",
+    "tags": [
+      "interactive",
+      "slap"
+    ],
+    "weight": 2
+  },
+  {
+    "slug": "zoomquilt",
+    "type": "external",
+    "title": "Zoomquilt",
+    "author": "nikolaus_baumgarten",
+    "description": "An infinite zoom through a surreal, hand-drawn fantasy landscape.",
+    "external_url": "http://zoomquilt.org/",
+    "tags": [
+      "visual",
+      "art"
+    ],
+    "weight": 2
+  },
+  {
+    "slug": "corndog-io",
+    "type": "external",
+    "title": "Corndog.io",
+    "author": "corndog_man",
+    "description": "A majestic downpour of falling corndogs. Pure visual bliss.",
+    "external_url": "http://corndog.io/",
+    "tags": [
+      "visual",
+      "food"
+    ],
+    "weight": 2
+  },
+  {
+    "slug": "always-judge-book",
+    "type": "external",
+    "title": "Always Judge a Book",
+    "author": "judge_book",
+    "description": "A site dedicated to the ancient art of judging books exclusively by their covers.",
+    "external_url": "http://alwaysjudgeabookbyitscover.com/",
+    "tags": [
+      "visual",
+      "books"
+    ],
+    "weight": 2
+  },
+  {
+    "slug": "color-shifter",
+    "type": "internal",
+    "title": "Color Shifter",
+    "author": "system",
+    "description": "Paint the void with a single click. Every hue is at your fingertips.",
+    "path": "/submissions/color-shifter/index.html",
+    "tags": [
+      "interactive",
+      "visual",
+      "colors"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "gravity-dot",
+    "type": "internal",
+    "title": "Gravity Dot",
+    "author": "system",
+    "description": "Defy the laws of physics by bouncing a single dot against the weight of the universe.",
+    "path": "/submissions/gravity-dot/index.html",
+    "tags": [
+      "interactive",
+      "physics"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "random-compliment",
+    "type": "internal",
+    "title": "Random Compliment",
+    "author": "system",
+    "description": "Receive surprisingly specific praise that you definitely didn't know you needed.",
+    "path": "/submissions/random-compliment/index.html",
+    "tags": [
+      "text",
+      "funny"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "emoji-rain",
+    "type": "internal",
+    "title": "Emoji Rain",
+    "author": "system",
+    "description": "A torrential downpour of digital emotion. Best enjoyed without an umbrella.",
+    "path": "/submissions/emoji-rain/index.html",
+    "tags": [
+      "visual",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "useless-toggle",
+    "type": "internal",
+    "title": "Useless Toggle",
+    "author": "system",
+    "description": "The most stubborn switch on the internet. It simply refuses to be turned on.",
+    "path": "/submissions/useless-toggle/index.html",
+    "tags": [
+      "interactive",
+      "useless"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "noise-maker",
+    "type": "internal",
+    "title": "Noise Maker",
+    "author": "system",
+    "description": "Synthesize random frequencies to create your own symphony of digital chaos.",
+    "path": "/submissions/noise-maker/index.html",
+    "tags": [
+      "audio",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "spinning-cat",
+    "type": "internal",
+    "title": "Spinning Cat",
+    "author": "system",
+    "description": "A feline friend that rotates. Warning: High click counts may cause dizziness.",
+    "path": "/submissions/spinning-cat/index.html",
+    "tags": [
+      "visual",
+      "interactive",
+      "cats"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "text-wiggler",
+    "type": "internal",
+    "title": "Text Wiggler",
+    "author": "system",
+    "description": "Type anything and watch it dance. Your words have never been this energetic.",
+    "path": "/submissions/text-wiggler/index.html",
+    "tags": [
+      "text",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "infinite-scroll-nothing",
+    "type": "internal",
+    "title": "Infinite Scroll Nothing",
+    "author": "system",
+    "description": "A journey to the bottom of a page that doesn't have one. Pure scrolling bliss.",
+    "path": "/submissions/infinite-scroll-nothing/index.html",
+    "tags": [
+      "visual",
+      "minimalist"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "digital-pet-rock",
+    "type": "internal",
+    "title": "Digital Pet Rock",
+    "author": "system",
+    "description": "The lowest maintenance pet in history. Guaranteed to never run away or need feeding.",
+    "path": "/submissions/digital-pet-rock/index.html",
+    "tags": [
+      "interactive",
+      "funny"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "cursor-follower",
+    "type": "internal",
+    "title": "Cursor Follower",
+    "author": "system",
+    "description": "A loyal pack of dots that follow your every move with curious hesitation.",
+    "path": "/submissions/cursor-follower/index.html",
+    "tags": [
+      "visual",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "pixel-painter",
+    "type": "internal",
+    "title": "Pixel Painter",
+    "author": "system",
+    "description": "A binary canvas for your 10x10 masterpieces. Toggle the void, one pixel at a time.",
+    "path": "/submissions/pixel-painter/index.html",
+    "tags": [
+      "interactive",
+      "art"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "vibration-sim",
+    "type": "internal",
+    "title": "Vibration Sim",
+    "author": "system",
+    "description": "A visual simulation of extreme turbulence. Do not use while drinking coffee.",
+    "path": "/submissions/vibration-sim/index.html",
+    "tags": [
+      "visual",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "random-number-generator-1",
+    "type": "internal",
+    "title": "Random Number Generator 1",
+    "author": "system",
+    "description": "The most predictable random generator ever built. It's number one for a reason.",
+    "path": "/submissions/random-number-generator-1/index.html",
+    "tags": [
+      "math",
+      "funny"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "bouncing-ball",
+    "type": "internal",
+    "title": "Bouncing Ball",
+    "author": "system",
+    "description": "Watch the physics of a perfect bounce. Will it ever hit the corner? Probably not.",
+    "path": "/submissions/bouncing-ball/index.html",
+    "tags": [
+      "visual",
+      "physics"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "eyes-follow",
+    "type": "internal",
+    "title": "Eyes Follow",
+    "author": "system",
+    "description": "You are never alone. These eyes are dedicated to watching your every move.",
+    "path": "/submissions/eyes-follow/index.html",
+    "tags": [
+      "visual",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "weather-nowhere",
+    "type": "internal",
+    "title": "Weather Nowhere",
+    "author": "system",
+    "description": "Live meteorological data from the deep void. Current conditions: Absolute Zero.",
+    "path": "/submissions/weather-nowhere/index.html",
+    "tags": [
+      "visual",
+      "funny"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "confetti-button",
+    "type": "internal",
+    "title": "Confetti Button",
+    "author": "system",
+    "description": "Celebrate the small things (or nothing at all) with a digital burst of joy.",
+    "path": "/submissions/confetti-button/index.html",
+    "tags": [
+      "visual",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "invisible-button",
+    "type": "internal",
+    "title": "Invisible Button",
+    "author": "system",
+    "description": "A test of patience and intuition. Can you find the button that isn't there?",
+    "path": "/submissions/invisible-button/index.html",
+    "tags": [
+      "interactive",
+      "game"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "loading-forever",
+    "type": "internal",
+    "title": "Loading Forever",
+    "author": "system",
+    "description": "Experience the thrill of a 99% progress bar that has deep existential questions.",
+    "path": "/submissions/loading-forever/index.html",
+    "tags": [
+      "visual",
+      "useless"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "pixel-pop",
+    "type": "internal",
+    "title": "Pixel Pop",
+    "author": "system",
+    "description": "A screen full of bubbles. Clicking one \"pops\" it into smaller pixels.",
+    "path": "/submissions/pixel-pop/index.html",
+    "tags": [
+      "interactive",
+      "game"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-un-calculator",
+    "type": "internal",
+    "title": "The Un-Calculator",
+    "author": "system",
+    "description": "A calculator where the buttons run away from your mouse.",
+    "path": "/submissions/the-un-calculator/index.html",
+    "tags": [
+      "interactive",
+      "funny"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "infinite-elevator",
+    "type": "internal",
+    "title": "Infinite Elevator",
+    "author": "system",
+    "description": "A panel of buttons for floors 1 to 1,000,000. Clicking one shows a 5-second animation, then a slightly different gray room.",
+    "path": "/submissions/infinite-elevator/index.html",
+    "tags": [
+      "visual",
+      "minimalist"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "paperclip-simulator",
+    "type": "internal",
+    "title": "Paperclip Simulator",
+    "author": "system",
+    "description": "A single paperclip on screen. You can bend it until it snaps. Then you get a new one.",
+    "path": "/submissions/paperclip-simulator/index.html",
+    "tags": [
+      "interactive",
+      "zen"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "manual-clock",
+    "type": "internal",
+    "title": "Manual Clock",
+    "author": "system",
+    "description": "A clock where the hands only move if you physically drag them.",
+    "path": "/submissions/manual-clock/index.html",
+    "tags": [
+      "interactive",
+      "time"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "bubble-wrap-eternal",
+    "type": "internal",
+    "title": "Bubble Wrap Eternal",
+    "author": "system",
+    "description": "Infinite sheets of virtual bubble wrap with satisfying pop sounds.",
+    "path": "/submissions/bubble-wrap-eternal/index.html",
+    "tags": [
+      "interactive",
+      "zen"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "password-god",
+    "type": "internal",
+    "title": "Password God",
+    "author": "system",
+    "description": "A field that rejects every password you enter with increasingly absurd reasons.",
+    "path": "/submissions/password-god/index.html",
+    "tags": [
+      "interactive",
+      "funny"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "virtual-stapler",
+    "type": "internal",
+    "title": "Virtual Stapler",
+    "author": "system",
+    "description": "Click to staple. After 20 clicks, the stapler is \"jammed\" and you have to click it 5 times to fix it.",
+    "path": "/submissions/virtual-stapler/index.html",
+    "tags": [
+      "interactive",
+      "useless"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "follow-the-line",
+    "type": "internal",
+    "title": "Follow the Line",
+    "author": "system",
+    "description": "A line that draws itself. If you stop moving your mouse, it stops.",
+    "path": "/submissions/follow-the-line/index.html",
+    "tags": [
+      "interactive",
+      "visual"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-silent-piano",
+    "type": "internal",
+    "title": "The Silent Piano",
+    "author": "system",
+    "description": "A keyboard where every key looks different but makes no sound.",
+    "path": "/submissions/the-silent-piano/index.html",
+    "tags": [
+      "interactive",
+      "audio"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "lava-lamp-js",
+    "type": "internal",
+    "title": "Lava Lamp JS",
+    "author": "system",
+    "description": "A procedurally generated CSS lava lamp.",
+    "path": "/submissions/lava-lamp-js/index.html",
+    "tags": [
+      "visual",
+      "zen"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "grass-grower",
+    "type": "internal",
+    "title": "Grass Grower",
+    "author": "system",
+    "description": "A black screen where grass grows wherever you move your mouse.",
+    "path": "/submissions/grass-grower/index.html",
+    "tags": [
+      "visual",
+      "zen"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "cloud-shaper",
+    "type": "internal",
+    "title": "Cloud Shaper",
+    "author": "system",
+    "description": "Click a cloud to change its shape into a random animal silhouette.",
+    "path": "/submissions/cloud-shaper/index.html",
+    "tags": [
+      "visual",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "static-tv",
+    "type": "internal",
+    "title": "Static TV",
+    "author": "system",
+    "description": "A screen of \"snow\" (analog TV static). You can \"draw\" in the static with your mouse.",
+    "path": "/submissions/static-tv/index.html",
+    "tags": [
+      "visual",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "neon-trails",
+    "type": "internal",
+    "title": "Neon Trails",
+    "author": "system",
+    "description": "A pitch-black canvas where your mouse leaves a glowing neon trail that slowly fades.",
+    "path": "/submissions/neon-trails/index.html",
+    "tags": [
+      "visual",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "kaleido-mouse",
+    "type": "internal",
+    "title": "Kaleido Mouse",
+    "author": "system",
+    "description": "Your cursor movements are mirrored in 8 directions like a kaleidoscope.",
+    "path": "/submissions/kaleido-mouse/index.html",
+    "tags": [
+      "visual",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "star-creator",
+    "type": "internal",
+    "title": "Star Creator",
+    "author": "system",
+    "description": "Click the night sky to place a star. Connect them to make \"useless\" constellations.",
+    "path": "/submissions/star-creator/index.html",
+    "tags": [
+      "visual",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "color-gravity",
+    "type": "internal",
+    "title": "Color Gravity",
+    "author": "system",
+    "description": "Falling colored sand that piles up at the bottom of the screen based on mouse tilt.",
+    "path": "/submissions/color-gravity/index.html",
+    "tags": [
+      "visual",
+      "physics"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-wind-chime",
+    "type": "internal",
+    "title": "The Wind Chime",
+    "author": "system",
+    "description": "A visual wind chime that sways when you \"blow\" (move mouse) over it.",
+    "path": "/submissions/the-wind-chime/index.html",
+    "tags": [
+      "visual",
+      "audio"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "melting-clock",
+    "type": "internal",
+    "title": "Melting Clock",
+    "author": "system",
+    "description": "A clock that slowly \"melts\" downward like a Dalí painting.",
+    "path": "/submissions/melting-clock/index.html",
+    "tags": [
+      "visual",
+      "time"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-oracle-of-no",
+    "type": "internal",
+    "title": "The Oracle of No",
+    "author": "system",
+    "description": "A crystal ball that answers every question with \"No,\" \"Probably not,\" or \"No (but in Spanish).\"",
+    "path": "/submissions/the-oracle-of-no/index.html",
+    "tags": [
+      "philosophy",
+      "weird"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-complaint-box",
+    "type": "internal",
+    "title": "The Complaint Box",
+    "author": "system",
+    "description": "A text area where you type your problems. When you hit \"Submit,\" the text turns into a bird and flies away.",
+    "path": "/submissions/the-complaint-box/index.html",
+    "tags": [
+      "philosophy",
+      "visual"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "digital-campfire",
+    "type": "internal",
+    "title": "Digital Campfire",
+    "author": "system",
+    "description": "Just a crackling fire. You can \"throw\" emojis into it to see them turn to ash.",
+    "path": "/submissions/digital-campfire/index.html",
+    "tags": [
+      "visual",
+      "zen"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-lonely-button",
+    "type": "internal",
+    "title": "The Lonely Button",
+    "author": "system",
+    "description": "A button that says \"Don't leave me.\" If you move your mouse toward the \"Back\" button, it starts crying.",
+    "path": "/submissions/the-lonely-button/index.html",
+    "tags": [
+      "interactive",
+      "funny"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "void-echo",
+    "type": "internal",
+    "title": "Void Echo",
+    "author": "system",
+    "description": "You type a word, and it repeats in smaller and smaller text until it disappears.",
+    "path": "/submissions/void-echo/index.html",
+    "tags": [
+      "philosophy",
+      "text"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "fortune-cookie-empty",
+    "type": "internal",
+    "title": "Fortune Cookie Empty",
+    "author": "system",
+    "description": "A fortune cookie that always contains a blank piece of paper.",
+    "path": "/submissions/fortune-cookie-empty/index.html",
+    "tags": [
+      "philosophy",
+      "funny"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "am-i-famous",
+    "type": "internal",
+    "title": "Am I Famous?",
+    "author": "system",
+    "description": "A site that just says \"Searching for your name on the guest list...\" forever.",
+    "path": "/submissions/am-i-famous/index.html",
+    "tags": [
+      "philosophy",
+      "useless"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-waiting-room",
+    "type": "internal",
+    "title": "The Waiting Room",
+    "author": "system",
+    "description": "A simulated waiting room with elevator music and a clock that moves 10% slower than real time.",
+    "path": "/submissions/the-waiting-room/index.html",
+    "tags": [
+      "philosophy",
+      "minimalist"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "meaning-of-life-button",
+    "type": "internal",
+    "title": "Meaning of Life Button",
+    "author": "system",
+    "description": "A giant button. Clicking it just displays your current battery percentage.",
+    "path": "/submissions/meaning-of-life-button/index.html",
+    "tags": [
+      "philosophy",
+      "funny"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-echo-chamber",
+    "type": "internal",
+    "title": "The Echo Chamber",
+    "author": "system",
+    "description": "Whatever you type is instantly repeated 20 times in different fonts.",
+    "path": "/submissions/the-echo-chamber/index.html",
+    "tags": [
+      "text",
+      "funny"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "white-noise-ocean",
+    "type": "internal",
+    "title": "White Noise Ocean",
+    "author": "system",
+    "description": "A slider that transitions between \"Statue\" (silence) and \"Ocean Storm.\"",
+    "path": "/submissions/white-noise-ocean/index.html",
+    "tags": [
+      "audio",
+      "zen"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "scream-into-the-void",
+    "type": "internal",
+    "title": "Scream Into the Void",
+    "author": "system",
+    "description": "A button that plays a 1-second sound of a person screaming, but it's very quiet.",
+    "path": "/submissions/scream-into-the-void/index.html",
+    "tags": [
+      "audio",
+      "philosophy"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-tuning-fork",
+    "type": "internal",
+    "title": "The Tuning Fork",
+    "author": "system",
+    "description": "A single fork that vibrates and plays a perfect 440Hz tone.",
+    "path": "/submissions/the-tuning-fork/index.html",
+    "tags": [
+      "audio",
+      "minimalist"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "random-applause",
+    "type": "internal",
+    "title": "Random Applause",
+    "author": "system",
+    "description": "A button that gives you a 3-second standing ovation.",
+    "path": "/submissions/random-applause/index.html",
+    "tags": [
+      "audio",
+      "funny"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "dial-up-nostalgia",
+    "type": "internal",
+    "title": "Dial-up Nostalgia",
+    "author": "system",
+    "description": "A button that plays the 1990s internet connection sound in all its glory.",
+    "path": "/submissions/dial-up-nostalgia/index.html",
+    "tags": [
+      "audio",
+      "nostalgia"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-hum",
+    "type": "internal",
+    "title": "The Hum",
+    "author": "system",
+    "description": "A site that plays a constant, barely audible low-frequency hum.",
+    "path": "/submissions/the-hum/index.html",
+    "tags": [
+      "audio",
+      "weird"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "pop-it-bass",
+    "type": "internal",
+    "title": "Pop It Bass",
+    "author": "system",
+    "description": "Popping bubbles that trigger deep 808 bass hits.",
+    "path": "/submissions/pop-it-bass/index.html",
+    "tags": [
+      "audio",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "step-on-leaves",
+    "type": "internal",
+    "title": "Step on Leaves",
+    "author": "system",
+    "description": "Move your mouse to hear the satisfying \"crunch\" of autumn leaves.",
+    "path": "/submissions/step-on-leaves/index.html",
+    "tags": [
+      "audio",
+      "zen"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "virtual-purr",
+    "type": "internal",
+    "title": "Virtual Purr",
+    "author": "system",
+    "description": "A cat silhouette that purrs louder the faster you move your mouse (petting).",
+    "path": "/submissions/virtual-purr/index.html",
+    "tags": [
+      "audio",
+      "cats"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "rain-on-a-tin-roof",
+    "type": "internal",
+    "title": "Rain on a Tin Roof",
+    "author": "system",
+    "description": "Pure, high-quality audio of rain on metal.",
+    "path": "/submissions/rain-on-a-tin-roof/index.html",
+    "tags": [
+      "audio",
+      "zen"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-mirror",
+    "type": "internal",
+    "title": "The Mirror",
+    "author": "system",
+    "description": "Uses the webcam to show your face, but adds a clown nose every 10 seconds.",
+    "path": "/submissions/the-mirror/index.html",
+    "tags": [
+      "chaos",
+      "funny"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "upside-down-web",
+    "type": "internal",
+    "title": "Upside Down Web",
+    "author": "system",
+    "description": "The entire page is rotated 180 degrees.",
+    "path": "/submissions/upside-down-web/index.html",
+    "tags": [
+      "chaos",
+      "useless"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "glitch-text-converter",
+    "type": "internal",
+    "title": "Glitch Text Converter",
+    "author": "system",
+    "description": "A tool that turns normal text into Zalgo/Glitch text.",
+    "path": "/submissions/glitch-text-converter/index.html",
+    "tags": [
+      "chaos",
+      "text"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-infinite-yes",
+    "type": "internal",
+    "title": "The Infinite Yes",
+    "author": "system",
+    "description": "A screen that just says \"YES\" in a different font every second.",
+    "path": "/submissions/the-infinite-yes/index.html",
+    "tags": [
+      "chaos",
+      "text"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "mouse-escape",
+    "type": "internal",
+    "title": "Mouse Escape",
+    "author": "system",
+    "description": "Your cursor is replaced by an emoji that tries to run away from where you are actually pointing.",
+    "path": "/submissions/mouse-escape/index.html",
+    "tags": [
+      "chaos",
+      "interactive"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "is-it-weekend",
+    "type": "internal",
+    "title": "Is It Weekend?",
+    "author": "system",
+    "description": "A giant \"NO\" (or \"YES\") based on the current day.",
+    "path": "/submissions/is-it-weekend/index.html",
+    "tags": [
+      "chaos",
+      "time"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "everything-is-fine",
+    "type": "internal",
+    "title": "Everything Is Fine",
+    "author": "system",
+    "description": "A site that slowly turns red while a small dog emoji sits in the corner.",
+    "path": "/submissions/everything-is-fine/index.html",
+    "tags": [
+      "chaos",
+      "funny"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-random-pixel",
+    "type": "internal",
+    "title": "The Random Pixel",
+    "author": "system",
+    "description": "A 4K screen with only one single pixel colored. Good luck finding it.",
+    "path": "/submissions/the-random-pixel/index.html",
+    "tags": [
+      "chaos",
+      "minimalist"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "shaking-ui",
+    "type": "internal",
+    "title": "Shaking UI",
+    "author": "system",
+    "description": "Every element on the page has a slight, constant nervous jitter.",
+    "path": "/submissions/shaking-ui/index.html",
+    "tags": [
+      "chaos",
+      "useless"
+    ],
+    "weight": 3
+  },
+  {
+    "slug": "the-end",
+    "type": "internal",
+    "title": "The End",
+    "author": "system",
+    "description": "A site that just says \"You've reached the end of the internet. Please turn around.\"",
+    "path": "/submissions/the-end/index.html",
+    "tags": [
+      "philosophy",
+      "minimalist"
+    ],
+    "weight": 3
+  }
+]

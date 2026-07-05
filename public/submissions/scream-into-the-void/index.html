@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scream Into the Void</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <button id="btn">SCREAM</button>
+    <script>
+        const ctx = new AudioContext(); document.getElementById('btn').onclick = () => { const osc = ctx.createOscillator(); const gain = ctx.createGain(); osc.connect(gain); gain.connect(ctx.destination); osc.type = 'sawtooth'; osc.frequency.value = 400; gain.gain.value = 0.01; osc.start(); osc.stop(ctx.currentTime + 1); };
+    </script>
+</body>
+</html>

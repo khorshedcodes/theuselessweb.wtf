@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Stapler</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <div id="stapler" style="font-size:100px; cursor:pointer;">📁</div><p id="status">Staple away!</p>
+    <script>
+        let count = 0; let jammed = false; const s = document.getElementById('stapler'); const t = document.getElementById('status'); s.onclick = () => { if(jammed) { count--; if(count <= 0) { jammed = false; t.innerText = "Fixed! Staple away!"; s.style.transform = ""; } else { t.innerText = "Jammed! Click " + count + " more times to fix."; s.style.transform = "rotate(10deg)"; } } else { count++; if(count >= 20) { jammed = true; count = 5; t.innerText = "JAMMED! Click 5 times to fix."; s.style.transform = "rotate(10deg)"; } else { t.innerText = "Stapled! (" + count + ")"; s.style.transform = "scaleY(0.8)"; setTimeout(()=>s.style.transform="", 100); } } };
+    </script>
+</body>
+</html>

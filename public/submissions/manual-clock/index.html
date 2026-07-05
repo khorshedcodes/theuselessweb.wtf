@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Clock</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <div id="clock" style="width:300px; height:300px; border:10px solid #333; border-radius:50%; position:relative;"><div id="hour" style="width:6px; height:80px; background:#333; position:absolute; bottom:50%; left:calc(50% - 3px); transform-origin:bottom; cursor:grab;"></div><div id="min" style="width:4px; height:120px; background:#666; position:absolute; bottom:50%; left:calc(50% - 2px); transform-origin:bottom; cursor:grab;"></div></div>
+    <script>
+        function makeDraggable(el) { let dragging = false; el.onmousedown = () => dragging = true; window.onmouseup = () => dragging = false; window.onmousemove = (e) => { if(!dragging) return; const rect = document.getElementById('clock').getBoundingClientRect(); const cx = rect.left + rect.width/2; const cy = rect.top + rect.height/2; const angle = Math.atan2(e.clientY - cy, e.clientX - cx) * 180 / Math.PI + 90; el.style.transform = 'rotate(' + angle + 'deg)'; }; } makeDraggable(document.getElementById('hour')); makeDraggable(document.getElementById('min'));
+    </script>
+</body>
+</html>

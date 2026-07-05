@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confetti Button</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ff9ff3;
+            overflow: hidden;
+        }
+        button {
+            padding: 20px 40px;
+            font-size: 24px;
+            cursor: pointer;
+            border: none;
+            background: #f368e0;
+            color: white;
+            border-radius: 10px;
+            z-index: 10;
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: red;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="burst(event)">CONFETTI!</button>
+    <script>
+        const colors = ['#ff9f43', '#ee5253', '#0abde3', '#10ac84', '#5f27cd', '#f368e0'];
+        function burst(e) {
+            const x = e.clientX;
+            const y = e.clientY;
+            for(let i=0; i<50; i++) {
+                const c = document.createElement('div');
+                c.className = 'confetti';
+                c.style.background = colors[Math.floor(Math.random()*colors.length)];
+                c.style.left = x + 'px';
+                c.style.top = y + 'px';
+                document.body.appendChild(c);
+                
+                const angle = Math.random() * Math.PI * 2;
+                const velocity = 5 + Math.random() * 10;
+                let vx = Math.cos(angle) * velocity;
+                let vy = Math.sin(angle) * velocity;
+                let cx = x;
+                let cy = y;
+                let gravity = 0.5;
+
+                const anim = setInterval(() => {
+                    cx += vx;
+                    cy += vy;
+                    vy += gravity;
+                    c.style.left = cx + 'px';
+                    c.style.top = cy + 'px';
+                    c.style.transform = `rotate(${cy}deg)`;
+                    if (cy > window.innerHeight) {
+                        clearInterval(anim);
+                        c.remove();
+                    }
+                }, 20);
+            }
+        }
+    </script>
+</body>
+</html>

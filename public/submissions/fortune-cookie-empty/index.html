@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Cookie Empty</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <div id="cookie" style="font-size:100px; cursor:pointer;">🥠</div><div id="paper" style="width:100px; height:20px; background:white; border:1px solid #ccc; display:none;"></div>
+    <script>
+        document.getElementById('cookie').onclick = () => { document.getElementById('cookie').innerText = '🥠 (cracked)'; document.getElementById('paper').style.display = 'block'; };
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleido Mouse</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        const container = document.getElementById('container'); const dots = []; for(let i=0; i<8; i++) { const d = document.createElement('div'); d.style.position = 'fixed'; d.style.width = '20px'; d.style.height = '20px'; d.style.background = 'red'; d.style.borderRadius = '50%'; container.appendChild(d); dots.push(d); } window.onmousemove = (e) => { const cx = window.innerWidth/2, cy = window.innerHeight/2; const dx = e.clientX - cx, dy = e.clientY - cy; dots.forEach((d, i) => { const angle = (i * Math.PI / 4); const x = cx + dx * Math.cos(angle) - dy * Math.sin(angle); const y = cy + dx * Math.sin(angle) + dy * Math.cos(angle); d.style.left = x + 'px'; d.style.top = y + 'px'; }); };
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow the Line</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }#c { position:fixed; top:0; left:0; }
+    </style>
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <script>
+        const c = document.getElementById('c'); const ctx = c.getContext('2d'); c.width = window.innerWidth; c.height = window.innerHeight; let lastX, lastY; window.onmousemove = (e) => { if(lastX) { ctx.beginPath(); ctx.moveTo(lastX, lastY); ctx.lineTo(e.clientX, e.clientY); ctx.strokeStyle = '#333'; ctx.lineWidth = 2; ctx.stroke(); } lastX = e.clientX; lastY = e.clientY; };
+    </script>
+</body>
+</html>

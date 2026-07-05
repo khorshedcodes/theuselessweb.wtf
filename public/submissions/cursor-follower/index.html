@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Follower</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #222; }
+        .dot {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #00d2d3;
+            border-radius: 50%;
+            pointer-events: none;
+            transition: transform 0.1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const dots = [];
+        for(let i=0; i<5; i++) {
+            const d = document.createElement('div');
+            d.className = 'dot';
+            document.body.appendChild(d);
+            dots.push({ el: d, x: 0, y: 0 });
+        }
+
+        let mouseX = 0;
+        let mouseY = 0;
+
+        window.onmousemove = (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        };
+
+        function animate() {
+            dots.forEach((dot, i) => {
+                const targetX = i === 0 ? mouseX : dots[i-1].x;
+                const targetY = i === 0 ? mouseY : dots[i-1].y;
+                
+                dot.x += (targetX - dot.x) * 0.2;
+                dot.y += (targetY - dot.y) * 0.2;
+                
+                dot.el.style.left = (dot.x - 10) + 'px';
+                dot.el.style.top = (dot.y - 10) + 'px';
+                dot.el.style.opacity = 1 - (i * 0.15);
+                dot.el.style.transform = `scale(${1 - (i * 0.1)})`;
+            });
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+</body>
+</html>

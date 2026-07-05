@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lonely Button</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <button id="btn">Don't leave me.</button>
+    <script>
+        const btn = document.getElementById('btn'); window.onmousemove = (e) => { if(e.clientY < 100) btn.innerText = "😭 PLEASE DON'T GO!"; else btn.innerText = "Don't leave me."; };
+    </script>
+</body>
+</html>

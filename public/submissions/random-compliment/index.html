@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Compliment</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Comic Sans MS', cursive;
+            background: #f0f9ff;
+            text-align: center;
+            padding: 20px;
+        }
+        #compliment {
+            font-size: 32px;
+            margin-bottom: 30px;
+            min-height: 80px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            background: #4cd137;
+            color: white;
+            border: none;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="compliment">You have a nice collection of atoms.</div>
+    <button onclick="newCompliment()">Another one!</button>
+    <script>
+        const compliments = [
+            "Your elbows are exceptionally symmetrical.",
+            "You have a very trustworthy forehead.",
+            "I like the way your eyelids work.",
+            "Your kneecaps are top-tier.",
+            "That's a very efficient-looking nose.",
+            "Your aura smells like freshly baked bread.",
+            "You're like a high-quality spatula.",
+            "Your presence is very aerodynamic.",
+            "I bet you've never forgotten to blink.",
+            "Your toes are impressively organized."
+        ];
+        function newCompliment() {
+            const index = Math.floor(Math.random() * compliments.length);
+            document.getElementById('compliment').innerText = compliments[index];
+        }
+    </script>
+</body>
+</html>

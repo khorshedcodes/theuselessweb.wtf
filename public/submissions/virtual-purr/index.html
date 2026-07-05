@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Purr</title>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; background: #f0f0f0; overflow: hidden; } h1 { color: #333; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <div style="font-size:100px;">🐱</div>
+    <script>
+        const ctx = new AudioContext(); let osc, gain; window.onmousemove = (e) => { if(!osc) { osc = ctx.createOscillator(); gain = ctx.createGain(); osc.connect(gain); gain.connect(ctx.destination); osc.frequency.value = 20; gain.gain.value = 0; osc.start(); } const speed = Math.abs(e.movementX) + Math.abs(e.movementY); gain.gain.value = Math.min(speed / 100, 0.1); };
+    </script>
+</body>
+</html>

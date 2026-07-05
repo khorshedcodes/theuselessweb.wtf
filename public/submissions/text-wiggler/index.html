@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Wiggler</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1abc9c;
+            font-family: sans-serif;
+        }
+        #input {
+            font-size: 40px;
+            padding: 20px;
+            border: 5px solid white;
+            background: transparent;
+            color: white;
+            outline: none;
+            text-align: center;
+        }
+        .wiggler {
+            display: inline-block;
+            transition: transform 0.05s;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="input" placeholder="Type something...">
+    <script>
+        const input = document.getElementById('input');
+        
+        setInterval(() => {
+            const x = (Math.random() - 0.5) * 10;
+            const y = (Math.random() - 0.5) * 10;
+            const rot = (Math.random() - 0.5) * 5;
+            input.style.transform = `translate(${x}px, ${y}px) rotate(${rot}deg)`;
+        }, 50);
+    </script>
+</body>
+</html>
